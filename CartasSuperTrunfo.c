@@ -1,15 +1,16 @@
 #include <stdio.h>
 
+// Programa para cadastrar duas cartas do Super Trunfo
 int main() {
 
     // ===== CARTA 1 =====
-    char estado1;
-    char codigo1[10];
-    char cidade1[50];
-    int populacao1;
-    float area1;
-    float pib1;
-    int pontos1;
+    char estado1;          // Armazena o estado (A-H)
+    char codigo1[10];      // Código da carta (ex: A01)
+    char cidade1[50];      // Nome da cidade
+    int populacao1;        // População da cidade
+    float area1;           // Área em km²
+    float pib1;            // PIB da cidade
+    int pontos1;           // Pontos turísticos
 
     // ===== CARTA 2 =====
     char estado2;
@@ -20,7 +21,7 @@ int main() {
     float pib2;
     int pontos2;
 
-    // ===== ENTRADA CARTA 1 =====
+    // Entrada de dados da carta 1
     printf("=== CARTA 1 ===\n");
 
     printf("Estado (A-H): ");
@@ -44,7 +45,8 @@ int main() {
     printf("Pontos turisticos: ");
     scanf("%d", &pontos1);
 
-    // ===== ENTRADA CARTA 2 =====
+    
+    // Entrada de dados da carta 2
     printf("\n=== CARTA 2 ===\n");
 
     printf("Estado (A-H): ");
@@ -68,7 +70,7 @@ int main() {
     printf("Pontos turisticos: ");
     scanf("%d", &pontos2);
 
-    // ===== SAÍDA =====
+    // Exibição dos dados
     printf("\n--- CARTA 1 ---\n");
     printf("Estado: %c\n", estado1);
     printf("Codigo: %s\n", codigo1);
